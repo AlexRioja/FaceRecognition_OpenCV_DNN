@@ -43,7 +43,7 @@ We can pass images to the DNN and it will tell us the prediction of where does t
 * Create Script that works as a Trigger for others retrieving face identification
 ## Authors
 
-**Alejandro Martinez** 
+**Alejandro Martinez de Ternero** 
 
 
 ## License
