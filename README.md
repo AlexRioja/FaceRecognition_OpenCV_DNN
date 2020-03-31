@@ -1,4 +1,7 @@
 # FaceRecognition with DeepNeuralNetworks and OpenCV
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/94548a7dfa9e43488234d25d65ccebb5)](https://app.codacy.com/manual/alexrioja98/FaceRecognition_OpenCV_DNN?utm_source=github.com&utm_medium=referral&utm_content=AlexRioja/FaceRecognition_OpenCV_DNN&utm_campaign=Badge_Grade_Dashboard)
+
 This is a Face Recognition system using Deep Neural Networks with the help of OpenCV
 It's a complete system itself as it lets you create the dataset, train the dnn with it and then perform the recognition in a live stream capture video.
 
