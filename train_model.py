@@ -5,11 +5,10 @@ import argparse
 import pickle
 import numpy as np
 
-#Modificar las siguientes variables al gusto del directorio montado
+# Modificar las siguientes variables al gusto del directorio montado
 
-embed_path="resources/pickle/embeddings.pickle"
-recognizer_path="resources/pickle/recognizer.pickle"
-
+embed_path = "resources/pickle/embeddings.pickle"
+recognizer_path = "resources/pickle/recognizer.pickle"
 
 # load the face embeddings
 
@@ -21,11 +20,11 @@ labels = data["names"]
 # then produce the actual face recognition
 print("Entrenando al modelo...")
 recognizer = SVC(C=1.0, kernel="linear", probability=True)
-np_labels=np.array(labels)
+np_labels = np.array(labels)
 recognizer.fit(data["embeddings"], np_labels)
 
 # write the actual face recognition model to disk
 with open(recognizer_path, "wb") as f:
-	f.write(pickle.dumps(recognizer))
+    f.write(pickle.dumps(recognizer))
 
 print("Saliendo..")
